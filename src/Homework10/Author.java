@@ -1,16 +1,14 @@
 package Homework10;
 
 public class Author {
-    private String name;
     private String surname;
-    public Author(String name, String surname) {
-        this.name = name;
+
+    public Author(String surname) {
+
         this.surname = surname;
     }
-    public String getName(){
-        return this.name;
-    }
-    public String getSurname(){
+
+    public String getSurname() {
         return this.surname;
     }
 }
