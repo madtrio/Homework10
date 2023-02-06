@@ -4,8 +4,10 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Author griboedovAS = new Author("Александр Сергеевич", "Грибоедов");
-        Author tolstoyLN = new Author("Лев Николаевич", "Толстой");
+        Author griboedovAS = new Author("Александр Сергеевич ", "Грибоедов ");
+        Author tolstoyLN = new Author("Лев Николаевич ", "Толстой ");
+        System.out.println("griboedovAS.title = " + griboedovAS.getName() + griboedovAS.getSurname());
+        System.out.println("tolstoyLN.title = " + tolstoyLN.getName() + tolstoyLN.getSurname());
         Book book1 = new Book("Горе от ума", 1970, "Грибоедов АС");
         Book book2 = new Book("Война и мир", 2073, "Толстой ЛН");
         System.out.println("book1.title = " + book1.getTitle());
