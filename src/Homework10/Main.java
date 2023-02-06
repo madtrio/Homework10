@@ -13,9 +13,7 @@ public class Main {
         System.out.println("book1.author = " + book1.getAuthor().getSurname());
         System.out.println("book2.author = " + book2.getAuthor().getSurname());
         System.out.println("book1.title = " + book1.getTitle());
-
         System.out.println("book2.title = " + book2.getTitle());
-
         System.out.println("book2.year = " + book2.getYear());
         book2.setYear(1989);
         System.out.println("book2.year = " + book2.getYear());
