@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Author griboedovAS = new Author("Грибоедов Александр Сергеевич  ");
         Author tolstoyLN = new Author("Толстой Лев Николаевич  ");
+        Author tolstoyAN = new Author("Толстой Лев Николаевич  ");
         System.out.println("griboedovAS.title = " + griboedovAS.getSurname());
         System.out.println("tolstoyLN.title = " + tolstoyLN.getSurname());
         Book book1 = new Book("Горе от ума", 1970, griboedovAS);
@@ -17,5 +18,9 @@ public class Main {
         System.out.println("book2.year = " + book2.getYear());
         book2.setYear(1989);
         System.out.println("book2.year = " + book2.getYear());
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(tolstoyLN.equals(tolstoyAN));
+        System.out.println(griboedovAS.equals(tolstoyAN));
     }
 }
