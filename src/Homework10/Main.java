@@ -11,6 +11,7 @@ public class Main {
         System.out.println("tolstoyLN.title = " + tolstoyLN.getSurname());
         Book book1 = new Book("Горе от ума", 1970, griboedovAS);
         Book book2 = new Book("Война и мир", 2073, tolstoyLN);
+        Book book3 = new Book ("Война и мир", 1953, tolstoyAN);
         System.out.println("book1.author = " + book1.getAuthor().getSurname());
         System.out.println("book2.author = " + book2.getAuthor().getSurname());
         System.out.println("book1.title = " + book1.getTitle());
@@ -22,5 +23,7 @@ public class Main {
         System.out.println(book2);
         System.out.println(tolstoyLN.equals(tolstoyAN));
         System.out.println(griboedovAS.equals(tolstoyAN));
+        System.out.println(book1.equals(book2));
+        System.out.println(book3.equals(book2));
     }
 }
